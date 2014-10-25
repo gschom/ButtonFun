@@ -15,6 +15,7 @@
 		37F2DD4319FC206200B940C5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD4119FC206200B940C5 /* MainViewController.m */; };
 		37F2DD4419FC206200B940C5 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37F2DD4219FC206200B940C5 /* MainViewController.xib */; };
 		37F2DD4819FC21A300B940C5 /* NSLayoutConstraint+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD4719FC21A300B940C5 /* NSLayoutConstraint+Helpers.m */; };
+		37F2DD4B19FC227700B940C5 /* CompactFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD4A19FC227700B940C5 /* CompactFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		37F2DD4219FC206200B940C5 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		37F2DD4619FC21A300B940C5 /* NSLayoutConstraint+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+Helpers.h"; sourceTree = "<group>"; };
 		37F2DD4719FC21A300B940C5 /* NSLayoutConstraint+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Helpers.m"; sourceTree = "<group>"; };
+		37F2DD4919FC227700B940C5 /* CompactFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompactFlowLayout.h; sourceTree = "<group>"; };
+		37F2DD4A19FC227700B940C5 /* CompactFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompactFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				37F2DD4019FC206200B940C5 /* MainViewController.h */,
 				37F2DD4119FC206200B940C5 /* MainViewController.m */,
 				37F2DD4219FC206200B940C5 /* MainViewController.xib */,
+				37F2DD4919FC227700B940C5 /* CompactFlowLayout.h */,
+				37F2DD4A19FC227700B940C5 /* CompactFlowLayout.m */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -244,6 +249,7 @@
 				37F2DD4819FC21A300B940C5 /* NSLayoutConstraint+Helpers.m in Sources */,
 				37F2DD4319FC206200B940C5 /* MainViewController.m in Sources */,
 				37D1EA1F19FC1EDA00CF4330 /* main.m in Sources */,
+				37F2DD4B19FC227700B940C5 /* CompactFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

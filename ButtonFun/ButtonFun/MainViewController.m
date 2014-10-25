@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "NSLayoutConstraint+Helpers.h"
+#import "CompactFlowLayout.h"
 
 
 #define kDefaultColors @[[UIColor redColor],[UIColor orangeColor],[UIColor yellowColor],[UIColor greenColor],[UIColor blueColor],[UIColor purpleColor],[UIColor blackColor],[UIColor brownColor]]
@@ -39,7 +40,7 @@ static NSString * cellReuseID = @"Cell";
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    CompactFlowLayout *flowLayout = [[CompactFlowLayout alloc] init];
     flowLayout.itemSize = self.itemSize;
     flowLayout.minimumInteritemSpacing = 0;
     flowLayout.minimumLineSpacing = 0;
