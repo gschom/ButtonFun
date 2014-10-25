@@ -17,6 +17,7 @@
                                                                options:0
                                                                metrics:nil
                                                                  views:NSDictionaryOfVariableBindings(view)]];
+    
     [constraints addObjectsFromArray:[self constraintsWithVisualFormat:@"|[view]|"
                                                                options:0
                                                                metrics:nil
