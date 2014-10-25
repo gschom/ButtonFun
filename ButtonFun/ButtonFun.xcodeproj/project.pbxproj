@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		37D1EA1F19FC1EDA00CF4330 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D1EA1E19FC1EDA00CF4330 /* main.m */; };
 		37D1EA2219FC1EDA00CF4330 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D1EA2119FC1EDA00CF4330 /* AppDelegate.m */; };
-		37D1EA2A19FC1EDA00CF4330 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D1EA2919FC1EDA00CF4330 /* Images.xcassets */; };
 		37D1EA2D19FC1EDA00CF4330 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D1EA2B19FC1EDA00CF4330 /* LaunchScreen.xib */; };
 		37D1EA3919FC1EDA00CF4330 /* ButtonFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D1EA3819FC1EDA00CF4330 /* ButtonFunTests.m */; };
 		37F2DD4319FC206200B940C5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD4119FC206200B940C5 /* MainViewController.m */; };
 		37F2DD4419FC206200B940C5 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37F2DD4219FC206200B940C5 /* MainViewController.xib */; };
 		37F2DD4819FC21A300B940C5 /* NSLayoutConstraint+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD4719FC21A300B940C5 /* NSLayoutConstraint+Helpers.m */; };
 		37F2DD4B19FC227700B940C5 /* CompactFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD4A19FC227700B940C5 /* CompactFlowLayout.m */; };
+		37F2DD4E19FC23B200B940C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F2DD4D19FC23B200B940C5 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,6 @@
 		37D1EA1E19FC1EDA00CF4330 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37D1EA2019FC1EDA00CF4330 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		37D1EA2119FC1EDA00CF4330 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		37D1EA2919FC1EDA00CF4330 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		37D1EA2C19FC1EDA00CF4330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		37D1EA3219FC1EDA00CF4330 /* ButtonFunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonFunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37D1EA3719FC1EDA00CF4330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		37F2DD4719FC21A300B940C5 /* NSLayoutConstraint+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Helpers.m"; sourceTree = "<group>"; };
 		37F2DD4919FC227700B940C5 /* CompactFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompactFlowLayout.h; sourceTree = "<group>"; };
 		37F2DD4A19FC227700B940C5 /* CompactFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompactFlowLayout.m; sourceTree = "<group>"; };
+		37F2DD4D19FC23B200B940C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +149,7 @@
 		37F2DD4C19FC231300B940C5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				37D1EA2919FC1EDA00CF4330 /* Images.xcassets */,
+				37F2DD4D19FC23B200B940C5 /* Images.xcassets */,
 			);
 			name = Resources;
 			path = ButtonFun;
@@ -235,9 +235,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F2DD4E19FC23B200B940C5 /* Images.xcassets in Resources */,
 				37D1EA2D19FC1EDA00CF4330 /* LaunchScreen.xib in Resources */,
 				37F2DD4419FC206200B940C5 /* MainViewController.xib in Resources */,
-				37D1EA2A19FC1EDA00CF4330 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
