@@ -70,8 +70,10 @@
 			isa = PBXGroup;
 			children = (
 				37D1EA1B19FC1EDA00CF4330 /* ButtonFun */,
+				37F2DD4C19FC231300B940C5 /* Resources */,
 				37D1EA3519FC1EDA00CF4330 /* ButtonFunTests */,
 				37D1EA1A19FC1EDA00CF4330 /* Products */,
+				37D1EA1C19FC1EDA00CF4330 /* Supporting Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,13 +89,10 @@
 		37D1EA1B19FC1EDA00CF4330 /* ButtonFun */ = {
 			isa = PBXGroup;
 			children = (
-				37F2DD4519FC218900B940C5 /* Helpers */,
-				37F2DD3F19FC202200B940C5 /* GUI */,
 				37D1EA2019FC1EDA00CF4330 /* AppDelegate.h */,
 				37D1EA2119FC1EDA00CF4330 /* AppDelegate.m */,
-				37D1EA2919FC1EDA00CF4330 /* Images.xcassets */,
-				37D1EA2B19FC1EDA00CF4330 /* LaunchScreen.xib */,
-				37D1EA1C19FC1EDA00CF4330 /* Supporting Files */,
+				37F2DD4519FC218900B940C5 /* Helpers */,
+				37F2DD3F19FC202200B940C5 /* GUI */,
 			);
 			path = ButtonFun;
 			sourceTree = "<group>";
@@ -105,6 +104,7 @@
 				37D1EA1E19FC1EDA00CF4330 /* main.m */,
 			);
 			name = "Supporting Files";
+			path = ButtonFun;
 			sourceTree = "<group>";
 		};
 		37D1EA3519FC1EDA00CF4330 /* ButtonFunTests */ = {
@@ -127,11 +127,12 @@
 		37F2DD3F19FC202200B940C5 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
+				37F2DD4919FC227700B940C5 /* CompactFlowLayout.h */,
+				37F2DD4A19FC227700B940C5 /* CompactFlowLayout.m */,
+				37D1EA2B19FC1EDA00CF4330 /* LaunchScreen.xib */,
 				37F2DD4019FC206200B940C5 /* MainViewController.h */,
 				37F2DD4119FC206200B940C5 /* MainViewController.m */,
 				37F2DD4219FC206200B940C5 /* MainViewController.xib */,
-				37F2DD4919FC227700B940C5 /* CompactFlowLayout.h */,
-				37F2DD4A19FC227700B940C5 /* CompactFlowLayout.m */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -143,6 +144,15 @@
 				37F2DD4719FC21A300B940C5 /* NSLayoutConstraint+Helpers.m */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		37F2DD4C19FC231300B940C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37D1EA2919FC1EDA00CF4330 /* Images.xcassets */,
+			);
+			name = Resources;
+			path = ButtonFun;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
