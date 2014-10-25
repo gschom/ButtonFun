@@ -76,6 +76,11 @@ static NSString * const cellReuseID = @"Cell"; //even though we aren't reusing c
 {
     return UIInterfaceOrientationMaskAll;
 }
+-(void)dealloc
+{
+    self.collectionView.dataSource = nil;
+    self.collectionView.delegate = nil;
+}
 
 //when the itemSize has changed, we need to relayout the collectionView.
 -(void)setItemSize:(CGSize)itemSize
