@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MainViewController : UIViewController
-
+-(instancetype) initWithItemSize: (CGSize) size;
+-(instancetype) initWithItemSize: (CGSize) size allowedColors: (NSArray *) allowedColors;
+@property (nonatomic) CGSize itemSize;
 @end

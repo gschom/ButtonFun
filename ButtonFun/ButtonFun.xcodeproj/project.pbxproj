@@ -14,6 +14,7 @@
 		37D1EA3919FC1EDA00CF4330 /* ButtonFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D1EA3819FC1EDA00CF4330 /* ButtonFunTests.m */; };
 		37F2DD4319FC206200B940C5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD4119FC206200B940C5 /* MainViewController.m */; };
 		37F2DD4419FC206200B940C5 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37F2DD4219FC206200B940C5 /* MainViewController.xib */; };
+		37F2DD4819FC21A300B940C5 /* NSLayoutConstraint+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD4719FC21A300B940C5 /* NSLayoutConstraint+Helpers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		37F2DD4019FC206200B940C5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		37F2DD4119FC206200B940C5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		37F2DD4219FC206200B940C5 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		37F2DD4619FC21A300B940C5 /* NSLayoutConstraint+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+Helpers.h"; sourceTree = "<group>"; };
+		37F2DD4719FC21A300B940C5 /* NSLayoutConstraint+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Helpers.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		37D1EA1B19FC1EDA00CF4330 /* ButtonFun */ = {
 			isa = PBXGroup;
 			children = (
+				37F2DD4519FC218900B940C5 /* Helpers */,
 				37F2DD3F19FC202200B940C5 /* GUI */,
 				37D1EA2019FC1EDA00CF4330 /* AppDelegate.h */,
 				37D1EA2119FC1EDA00CF4330 /* AppDelegate.m */,
@@ -125,6 +129,15 @@
 				37F2DD4219FC206200B940C5 /* MainViewController.xib */,
 			);
 			name = GUI;
+			sourceTree = "<group>";
+		};
+		37F2DD4519FC218900B940C5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				37F2DD4619FC21A300B940C5 /* NSLayoutConstraint+Helpers.h */,
+				37F2DD4719FC21A300B940C5 /* NSLayoutConstraint+Helpers.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37D1EA2219FC1EDA00CF4330 /* AppDelegate.m in Sources */,
+				37F2DD4819FC21A300B940C5 /* NSLayoutConstraint+Helpers.m in Sources */,
 				37F2DD4319FC206200B940C5 /* MainViewController.m in Sources */,
 				37D1EA1F19FC1EDA00CF4330 /* main.m in Sources */,
 			);
