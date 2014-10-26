@@ -9,6 +9,9 @@
 #import "MainViewController.h"
 #import "NSLayoutConstraint+Helpers.h"
 #import "CompactFlowLayout.h"
+#import "Store.h"
+#import "UIColor+StringRepresentation.h"
+#import "StatisticsViewController.h"
 
 #define kDefaultColors @[[UIColor redColor],[UIColor orangeColor],[UIColor yellowColor],[UIColor greenColor],[UIColor blueColor],[UIColor purpleColor],[UIColor blackColor],[UIColor brownColor]]
 
@@ -21,21 +24,29 @@ static NSString * const cellReuseID = @"Cell"; //even though we aren't reusing c
 @end
 
 @implementation MainViewController
-
+-(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if(self)
+    {
+        self.allowedColors = kDefaultColors;
+    }
+    
+    return self;
+}
 -(instancetype)initWithItemSize:(CGSize)size
 {
     return [self initWithItemSize:size allowedColors:nil];
 }
 -(instancetype)initWithItemSize:(CGSize)size allowedColors:(NSArray *)allowedColors
 {
-    self = [super initWithNibName:NSStringFromClass(self.class) bundle:nil];
+    self = [self initWithNibName:NSStringFromClass(self.class) bundle:nil];
     if(self)
     {
         self.itemSize = size;
         
         if(!allowedColors || allowedColors.count == 0) //use default colors
-            allowedColors = kDefaultColors;
-        self.allowedColors = allowedColors;
+            self.allowedColors = kDefaultColors;
     }
     
     return self;
@@ -60,6 +71,11 @@ static NSString * const cellReuseID = @"Cell"; //even though we aren't reusing c
     
     //we don't need or want scrolling since the grid will fit in the screen's bounds
     self.collectionView.scrollEnabled = NO;
+    
+    //setup a longpress gesture that will be used to launch the StatisticsViewController modally.
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(viewWasLongPressed:)];
+    [self.collectionView addGestureRecognizer:longPress];
+    
     
 }
 -(void)viewDidLayoutSubviews
@@ -117,9 +133,44 @@ static NSString * const cellReuseID = @"Cell"; //even though we aren't reusing c
 #pragma mark UICollectionViewDelegate
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    //when a cell is selected, set it's background color to a new, random color
     UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+    NSString *colorString = [cell.backgroundColor stringRepresentation];
+    
+    //when a cell is selected, set it's background color to a new, random color
     [self setRandomColorOnCell:cell];
+    
+    //
+    [BackgroundContext performBlock:^{
+        
+        NSManagedObject *object = [Store retrieveObjectWithEntityName:ENTITY_STATISTIC withPredicate:[NSPredicate predicateWithFormat:@"color == %@", colorString] usingContext:BackgroundContext];
+        
+        if(object && [object isKindOfClass:[StatisticMO class]])
+        {
+            StatisticMO *statistic = (StatisticMO *)object;
+            if(!statistic.color)
+                statistic.color = colorString;
+            statistic.count = @(statistic.count.intValue + 1);
+        }
+        else
+            NSLog(@"%s: An unknown object was fetched. Expected %@ instance. Found: %@", __PRETTY_FUNCTION__, NSStringFromClass([StatisticMO class]), object);
+        
+        NSError *saveError = nil;
+        [BackgroundContext save:&saveError];
+        if(saveError)
+            NSLog(@"%s: Error saving managedObjectContext: %@", __PRETTY_FUNCTION__, saveError);
+    }];
+}
+
+#pragma mark UILongPressGetstureRecognzier
+-(void) viewWasLongPressed: (UILongPressGestureRecognizer *) longPress
+{
+    if(longPress.state == UIGestureRecognizerStateBegan)
+    {
+        //present the StatistiveViewController modally
+        StatisticsViewController *statisticsVC = [[StatisticsViewController alloc] init];
+        statisticsVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        [self presentViewController:statisticsVC animated:YES completion:nil];
+    }
 }
 
 #pragma mark Helper methods
@@ -158,6 +209,4 @@ static NSString * const cellReuseID = @"Cell"; //even though we aren't reusing c
     NSInteger numRows = floorf(self.view.bounds.size.height / self.itemSize.height);
     self.numberItemsRequired = numColumns * numRows;
 }
-
-
 @end

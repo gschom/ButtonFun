@@ -12,10 +12,18 @@
 		37D1EA2D19FC1EDA00CF4330 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D1EA2B19FC1EDA00CF4330 /* LaunchScreen.xib */; };
 		37D1EA3919FC1EDA00CF4330 /* ButtonFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D1EA3819FC1EDA00CF4330 /* ButtonFunTests.m */; };
 		37F2DD4319FC206200B940C5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD4119FC206200B940C5 /* MainViewController.m */; };
-		37F2DD4419FC206200B940C5 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37F2DD4219FC206200B940C5 /* MainViewController.xib */; };
 		37F2DD4819FC21A300B940C5 /* NSLayoutConstraint+Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD4719FC21A300B940C5 /* NSLayoutConstraint+Helpers.m */; };
 		37F2DD4B19FC227700B940C5 /* CompactFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD4A19FC227700B940C5 /* CompactFlowLayout.m */; };
 		37F2DD4E19FC23B200B940C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F2DD4D19FC23B200B940C5 /* Images.xcassets */; };
+		37F2DD5619FC463C00B940C5 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD5519FC463C00B940C5 /* Store.m */; };
+		37F2DD5919FC478600B940C5 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F2DD5819FC478600B940C5 /* CoreData.framework */; };
+		37F2DD5D19FC47D800B940C5 /* ButtonFun.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD5B19FC47D800B940C5 /* ButtonFun.xcdatamodeld */; };
+		37F2DD6119FC48AF00B940C5 /* StatisticMO.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD6019FC48AF00B940C5 /* StatisticMO.m */; };
+		37F2DD6419FC49D500B940C5 /* StringConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD6319FC49D500B940C5 /* StringConstants.m */; };
+		37F2DD6719FC4B4900B940C5 /* UIColor+StringRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD6619FC4B4900B940C5 /* UIColor+StringRepresentation.m */; };
+		37F2DD6919FC4BFE00B940C5 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F2DD6819FC4BFE00B940C5 /* CoreImage.framework */; };
+		37F2DD6D19FC52F400B940C5 /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD6B19FC52F400B940C5 /* StatisticsViewController.m */; };
+		37F2DD8319FC781100B940C5 /* ButtonStatisticCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD8219FC781100B940C5 /* ButtonStatisticCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,12 +48,26 @@
 		37D1EA3819FC1EDA00CF4330 /* ButtonFunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonFunTests.m; sourceTree = "<group>"; };
 		37F2DD4019FC206200B940C5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		37F2DD4119FC206200B940C5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		37F2DD4219FC206200B940C5 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		37F2DD4619FC21A300B940C5 /* NSLayoutConstraint+Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+Helpers.h"; sourceTree = "<group>"; };
 		37F2DD4719FC21A300B940C5 /* NSLayoutConstraint+Helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+Helpers.m"; sourceTree = "<group>"; };
 		37F2DD4919FC227700B940C5 /* CompactFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompactFlowLayout.h; sourceTree = "<group>"; };
 		37F2DD4A19FC227700B940C5 /* CompactFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompactFlowLayout.m; sourceTree = "<group>"; };
 		37F2DD4D19FC23B200B940C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		37F2DD5419FC463C00B940C5 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		37F2DD5519FC463C00B940C5 /* Store.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
+		37F2DD5819FC478600B940C5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		37F2DD5C19FC47D800B940C5 /* ButtonFun.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ButtonFun.xcdatamodel; sourceTree = "<group>"; };
+		37F2DD5F19FC48AF00B940C5 /* StatisticMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticMO.h; sourceTree = "<group>"; };
+		37F2DD6019FC48AF00B940C5 /* StatisticMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticMO.m; sourceTree = "<group>"; };
+		37F2DD6219FC49D500B940C5 /* StringConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringConstants.h; sourceTree = "<group>"; };
+		37F2DD6319FC49D500B940C5 /* StringConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringConstants.m; sourceTree = "<group>"; };
+		37F2DD6519FC4B4900B940C5 /* UIColor+StringRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+StringRepresentation.h"; sourceTree = "<group>"; };
+		37F2DD6619FC4B4900B940C5 /* UIColor+StringRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+StringRepresentation.m"; sourceTree = "<group>"; };
+		37F2DD6819FC4BFE00B940C5 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		37F2DD6A19FC52F400B940C5 /* StatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsViewController.h; sourceTree = "<group>"; };
+		37F2DD6B19FC52F400B940C5 /* StatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsViewController.m; sourceTree = "<group>"; };
+		37F2DD8119FC781100B940C5 /* ButtonStatisticCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonStatisticCell.h; sourceTree = "<group>"; };
+		37F2DD8219FC781100B940C5 /* ButtonStatisticCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonStatisticCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F2DD6919FC4BFE00B940C5 /* CoreImage.framework in Frameworks */,
+				37F2DD5919FC478600B940C5 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,8 +115,10 @@
 			children = (
 				37D1EA2019FC1EDA00CF4330 /* AppDelegate.h */,
 				37D1EA2119FC1EDA00CF4330 /* AppDelegate.m */,
-				37F2DD4519FC218900B940C5 /* Helpers */,
+				37F2DD6219FC49D500B940C5 /* StringConstants.h */,
+				37F2DD6319FC49D500B940C5 /* StringConstants.m */,
 				37F2DD3F19FC202200B940C5 /* GUI */,
+				37F2DD5719FC464B00B940C5 /* Model */,
 			);
 			path = ButtonFun;
 			sourceTree = "<group>";
@@ -100,6 +126,7 @@
 		37D1EA1C19FC1EDA00CF4330 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				37F2DD5A19FC479C00B940C5 /* Frameworks */,
 				37D1EA1D19FC1EDA00CF4330 /* Info.plist */,
 				37D1EA1E19FC1EDA00CF4330 /* main.m */,
 			);
@@ -127,23 +154,12 @@
 		37F2DD3F19FC202200B940C5 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
-				37F2DD4919FC227700B940C5 /* CompactFlowLayout.h */,
-				37F2DD4A19FC227700B940C5 /* CompactFlowLayout.m */,
 				37D1EA2B19FC1EDA00CF4330 /* LaunchScreen.xib */,
-				37F2DD4019FC206200B940C5 /* MainViewController.h */,
-				37F2DD4119FC206200B940C5 /* MainViewController.m */,
-				37F2DD4219FC206200B940C5 /* MainViewController.xib */,
+				37F2DD8619FC7DDA00B940C5 /* Helpers */,
+				37F2DD8419FC7DB500B940C5 /* MainView */,
+				37F2DD8519FC7DC800B940C5 /* Statistics */,
 			);
 			name = GUI;
-			sourceTree = "<group>";
-		};
-		37F2DD4519FC218900B940C5 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				37F2DD4619FC21A300B940C5 /* NSLayoutConstraint+Helpers.h */,
-				37F2DD4719FC21A300B940C5 /* NSLayoutConstraint+Helpers.m */,
-			);
-			name = Helpers;
 			sourceTree = "<group>";
 		};
 		37F2DD4C19FC231300B940C5 /* Resources */ = {
@@ -153,6 +169,68 @@
 			);
 			name = Resources;
 			path = ButtonFun;
+			sourceTree = "<group>";
+		};
+		37F2DD5719FC464B00B940C5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37F2DD5E19FC486D00B940C5 /* MOs */,
+				37F2DD5B19FC47D800B940C5 /* ButtonFun.xcdatamodeld */,
+				37F2DD5419FC463C00B940C5 /* Store.h */,
+				37F2DD5519FC463C00B940C5 /* Store.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		37F2DD5A19FC479C00B940C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37F2DD6819FC4BFE00B940C5 /* CoreImage.framework */,
+				37F2DD5819FC478600B940C5 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37F2DD5E19FC486D00B940C5 /* MOs */ = {
+			isa = PBXGroup;
+			children = (
+				37F2DD5F19FC48AF00B940C5 /* StatisticMO.h */,
+				37F2DD6019FC48AF00B940C5 /* StatisticMO.m */,
+			);
+			name = MOs;
+			sourceTree = "<group>";
+		};
+		37F2DD8419FC7DB500B940C5 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				37F2DD4919FC227700B940C5 /* CompactFlowLayout.h */,
+				37F2DD4A19FC227700B940C5 /* CompactFlowLayout.m */,
+				37F2DD4019FC206200B940C5 /* MainViewController.h */,
+				37F2DD4119FC206200B940C5 /* MainViewController.m */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		37F2DD8519FC7DC800B940C5 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				37F2DD8119FC781100B940C5 /* ButtonStatisticCell.h */,
+				37F2DD8219FC781100B940C5 /* ButtonStatisticCell.m */,
+				37F2DD6A19FC52F400B940C5 /* StatisticsViewController.h */,
+				37F2DD6B19FC52F400B940C5 /* StatisticsViewController.m */,
+			);
+			name = Statistics;
+			sourceTree = "<group>";
+		};
+		37F2DD8619FC7DDA00B940C5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				37F2DD4619FC21A300B940C5 /* NSLayoutConstraint+Helpers.h */,
+				37F2DD4719FC21A300B940C5 /* NSLayoutConstraint+Helpers.m */,
+				37F2DD6519FC4B4900B940C5 /* UIColor+StringRepresentation.h */,
+				37F2DD6619FC4B4900B940C5 /* UIColor+StringRepresentation.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +315,6 @@
 			files = (
 				37F2DD4E19FC23B200B940C5 /* Images.xcassets in Resources */,
 				37D1EA2D19FC1EDA00CF4330 /* LaunchScreen.xib in Resources */,
-				37F2DD4419FC206200B940C5 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +333,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				37D1EA2219FC1EDA00CF4330 /* AppDelegate.m in Sources */,
+				37F2DD8319FC781100B940C5 /* ButtonStatisticCell.m in Sources */,
 				37F2DD4819FC21A300B940C5 /* NSLayoutConstraint+Helpers.m in Sources */,
+				37F2DD5D19FC47D800B940C5 /* ButtonFun.xcdatamodeld in Sources */,
+				37F2DD6419FC49D500B940C5 /* StringConstants.m in Sources */,
 				37F2DD4319FC206200B940C5 /* MainViewController.m in Sources */,
+				37F2DD6119FC48AF00B940C5 /* StatisticMO.m in Sources */,
+				37F2DD5619FC463C00B940C5 /* Store.m in Sources */,
+				37F2DD6719FC4B4900B940C5 /* UIColor+StringRepresentation.m in Sources */,
+				37F2DD6D19FC52F400B940C5 /* StatisticsViewController.m in Sources */,
 				37D1EA1F19FC1EDA00CF4330 /* main.m in Sources */,
 				37F2DD4B19FC227700B940C5 /* CompactFlowLayout.m in Sources */,
 			);
@@ -375,7 +459,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ButtonFun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -385,7 +471,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ButtonFun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -456,6 +544,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		37F2DD5B19FC47D800B940C5 /* ButtonFun.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				37F2DD5C19FC47D800B940C5 /* ButtonFun.xcdatamodel */,
+			);
+			currentVersion = 37F2DD5C19FC47D800B940C5 /* ButtonFun.xcdatamodel */;
+			path = ButtonFun.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 37D1EA1119FC1EDA00CF4330 /* Project object */;
 }
