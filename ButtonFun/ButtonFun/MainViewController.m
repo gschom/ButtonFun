@@ -125,11 +125,6 @@ static NSString * const cellReuseID = @"Cell"; //even though we aren't reusing c
 }
 
 #pragma mark Helper methods
-
-/**
- Sets the background color of the provided cell to a new, random color. New in this sense means 'not the same as the previous background color'. The random color is chosen from the allowedColors array that was provided during the initialization methods.
- @param cell The UICollectionViewCell that wil have it's background set to a random color
- */
 -(void) setRandomColorOnCell: (UICollectionViewCell *) cell animated: (BOOL) animated
 {
     UIColor * (^getRandomColor)() = ^UIColor *() {

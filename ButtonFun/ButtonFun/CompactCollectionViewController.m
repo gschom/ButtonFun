@@ -11,15 +11,15 @@
 #import "NSLayoutConstraint+Helpers.h"
 
 #define kDefaultItemSize CGSizeMake(40,40)
-@interface CompactCollectionViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface CompactCollectionViewController ()
 @property (nonatomic, strong, readwrite) UICollectionView *collectionView;
 @property NSInteger numberItemsRequired; //calulated when appropriate
 @end
 
 @implementation CompactCollectionViewController
--(instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+-(instancetype)init
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    self = [super init];
     if (self)
     {
         self.itemSize = kDefaultItemSize;
@@ -29,7 +29,7 @@
 }
 -(instancetype)initWithItemSize:(CGSize)size
 {
-    self = [self initWithNibName:NSStringFromClass(self.class) bundle:nil];
+    self = [self init];
     if(self)
     {
         self.itemSize = size;

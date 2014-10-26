@@ -12,7 +12,7 @@
  * @class CompactCollectionViewController
  * @description A viewcontroller that owns and lays out a compact collectionView. See CompactFlowLayout for more information. By default, this instance is both the datasource and delegate of the collectionView. Therefore subclasses must override -collectionView:cellForItemAtIndexPath: and return a non-nil cell.
  */
-@interface CompactCollectionViewController : CommonViewController
+@interface CompactCollectionViewController : CommonViewController <UICollectionViewDataSource, UICollectionViewDelegate>
 
 /// the collectionview being used to lay out cells
 @property (nonatomic, strong, readonly) UICollectionView *collectionView;

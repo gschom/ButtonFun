@@ -20,4 +20,12 @@
  @return A MainViewController instance
  */
 -(instancetype) initWithItemSize: (CGSize) size allowedColors: (NSArray *) allowedColors;
+
+
+/**
+ Sets the background color of the provided cell to a new, random color. New in this sense means 'not the same as the previous background color'. The random color is chosen from the allowedColors array that was provided during the initialization methods.
+ @param cell The UICollectionViewCell that will have it's background set to a random color.
+ @param animated BOOL indicating whether or not the color transition should be animated.
+ */
+-(void) setRandomColorOnCell: (UICollectionViewCell *) cell animated: (BOOL) animated;
 @end
