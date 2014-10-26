@@ -15,7 +15,7 @@
     self = [super init];
     if(self)
     {
-        //by default we don't want any spacing between our items
+        //by default we don't want any spacing between our items. Implementers are free to adjust these
         self.minimumInteritemSpacing = 0;
         self.minimumLineSpacing = 0;
     }
@@ -27,6 +27,7 @@
 {
     return self.collectionView.bounds.size;
 }
+
 
 /*
  This method is responsible for distributing any extra space. 2 iterations over the layout attributes are needed. In the first loop we determine the smallest extra space along both the y and x axis. We need the smallest extra space among each row/column so that we don't push any items outside of the bounds of the collectionview. This also allows the layout to absorb extra space if a dynamic item size is used. In the second loop, we adjust the origins of the attributes such that any extra space is uniformly distributed on the edges of the collectionView.
@@ -41,9 +42,9 @@
     {
         UICollectionViewLayoutAttributes *currentLayoutAttributes = attributeList[i];
         UICollectionViewLayoutAttributes *previousLayoutAttributes = i == 0 ? nil : attributeList[i - 1];
-        NSInteger trailingXOfPrevious = CGRectGetMaxX(previousLayoutAttributes.frame);
+        NSInteger trailingXOfPrevious = CGRectGetMaxX(previousLayoutAttributes.frame) + (previousLayoutAttributes ? self.minimumInteritemSpacing : 0);
         
-        //kiss horizontal items exactly up to one another (so that the min and max size between then is 0). UICollectionView seems to already do this for vertical items without any changes.
+        //kiss horizontal items exactly up to one another (so that the min and max size between then is minimumInteritemSpacing). UICollectionView seems to already do this for vertical items without any changes.
         if(trailingXOfPrevious + currentLayoutAttributes.frame.size.width < self.collectionViewContentSize.width)
         {
             CGRect frame = currentLayoutAttributes.frame;
@@ -59,7 +60,7 @@
                 extraXSpaceNumber = @(!extraXSpaceNumber ? extraXForPreviousRow :  MIN(extraXSpaceNumber.floatValue, extraXForPreviousRow));
             }
         }
-        NSInteger bottomYOfPrevious = CGRectGetMaxY(previousLayoutAttributes.frame);
+        NSInteger bottomYOfPrevious = CGRectGetMaxY(previousLayoutAttributes.frame) + (previousLayoutAttributes ? self.minimumLineSpacing : 0);
         if(!(bottomYOfPrevious + currentLayoutAttributes.frame.size.height < self.collectionViewContentSize.height))
         {
             //this is an element at the top of a new column. That means the previous element (if it exists) is the end of a column.

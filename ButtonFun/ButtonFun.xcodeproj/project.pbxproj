@@ -24,6 +24,8 @@
 		37F2DD6919FC4BFE00B940C5 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F2DD6819FC4BFE00B940C5 /* CoreImage.framework */; };
 		37F2DD6D19FC52F400B940C5 /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD6B19FC52F400B940C5 /* StatisticsViewController.m */; };
 		37F2DD8319FC781100B940C5 /* ButtonStatisticCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD8219FC781100B940C5 /* ButtonStatisticCell.m */; };
+		37F2DD8919FD489D00B940C5 /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD8819FD489D00B940C5 /* CommonViewController.m */; };
+		37F2DD8C19FD55BF00B940C5 /* CompactCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2DD8B19FD55BF00B940C5 /* CompactCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,10 @@
 		37F2DD6B19FC52F400B940C5 /* StatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsViewController.m; sourceTree = "<group>"; };
 		37F2DD8119FC781100B940C5 /* ButtonStatisticCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonStatisticCell.h; sourceTree = "<group>"; };
 		37F2DD8219FC781100B940C5 /* ButtonStatisticCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonStatisticCell.m; sourceTree = "<group>"; };
+		37F2DD8719FD489D00B940C5 /* CommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonViewController.h; sourceTree = "<group>"; };
+		37F2DD8819FD489D00B940C5 /* CommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonViewController.m; sourceTree = "<group>"; };
+		37F2DD8A19FD55BF00B940C5 /* CompactCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompactCollectionViewController.h; sourceTree = "<group>"; };
+		37F2DD8B19FD55BF00B940C5 /* CompactCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompactCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				37D1EA2B19FC1EDA00CF4330 /* LaunchScreen.xib */,
+				37F2DD8D19FD55C200B940C5 /* Common */,
 				37F2DD8619FC7DDA00B940C5 /* Helpers */,
 				37F2DD8419FC7DB500B940C5 /* MainView */,
 				37F2DD8519FC7DC800B940C5 /* Statistics */,
@@ -203,8 +210,6 @@
 		37F2DD8419FC7DB500B940C5 /* MainView */ = {
 			isa = PBXGroup;
 			children = (
-				37F2DD4919FC227700B940C5 /* CompactFlowLayout.h */,
-				37F2DD4A19FC227700B940C5 /* CompactFlowLayout.m */,
 				37F2DD4019FC206200B940C5 /* MainViewController.h */,
 				37F2DD4119FC206200B940C5 /* MainViewController.m */,
 			);
@@ -231,6 +236,19 @@
 				37F2DD6619FC4B4900B940C5 /* UIColor+StringRepresentation.m */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		37F2DD8D19FD55C200B940C5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				37F2DD8719FD489D00B940C5 /* CommonViewController.h */,
+				37F2DD8819FD489D00B940C5 /* CommonViewController.m */,
+				37F2DD8A19FD55BF00B940C5 /* CompactCollectionViewController.h */,
+				37F2DD8B19FD55BF00B940C5 /* CompactCollectionViewController.m */,
+				37F2DD4919FC227700B940C5 /* CompactFlowLayout.h */,
+				37F2DD4A19FC227700B940C5 /* CompactFlowLayout.m */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F2DD8919FD489D00B940C5 /* CommonViewController.m in Sources */,
 				37D1EA2219FC1EDA00CF4330 /* AppDelegate.m in Sources */,
 				37F2DD8319FC781100B940C5 /* ButtonStatisticCell.m in Sources */,
 				37F2DD4819FC21A300B940C5 /* NSLayoutConstraint+Helpers.m in Sources */,
@@ -341,6 +360,7 @@
 				37F2DD6119FC48AF00B940C5 /* StatisticMO.m in Sources */,
 				37F2DD5619FC463C00B940C5 /* Store.m in Sources */,
 				37F2DD6719FC4B4900B940C5 /* UIColor+StringRepresentation.m in Sources */,
+				37F2DD8C19FD55BF00B940C5 /* CompactCollectionViewController.m in Sources */,
 				37F2DD6D19FC52F400B940C5 /* StatisticsViewController.m in Sources */,
 				37D1EA1F19FC1EDA00CF4330 /* main.m in Sources */,
 				37F2DD4B19FC227700B940C5 /* CompactFlowLayout.m in Sources */,
@@ -461,7 +481,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ButtonFun/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -473,7 +493,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ButtonFun/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

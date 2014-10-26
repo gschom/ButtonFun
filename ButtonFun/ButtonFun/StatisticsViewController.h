@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommonViewController.h"
 
 /**
  * @class StatisticsViewController
  * @description A viewcontroller that can be used to show the statistics of each color of button.
  */
-@interface StatisticsViewController : UIViewController
+@interface StatisticsViewController : CommonViewController
 
 @end

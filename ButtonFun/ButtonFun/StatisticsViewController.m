@@ -46,11 +46,6 @@ static NSString *const StatisticsCellReuseId = @"StatisticsCell";
     self.tableView.dataSource = self;
     [self setupFRC];
 }
-//by default, iPhone supports UIInterfaceOrientationMaskAllButUpsideDown. Override this to support all orientations as described in the spec.
--(NSUInteger)supportedInterfaceOrientations
-{
-    return UIInterfaceOrientationMaskAll;
-}
 
 -(void)dealloc
 {
