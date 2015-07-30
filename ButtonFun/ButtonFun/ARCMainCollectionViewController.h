@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ARCMainCollectionViewController.h
 //  ButtonFun
 //
 //  Created by Antonio Carella on 7/30/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ARCMainCollectionViewController : UICollectionViewController
 
 @end
-

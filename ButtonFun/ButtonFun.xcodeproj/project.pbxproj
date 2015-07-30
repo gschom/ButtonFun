@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		BE191E3F1B6AB4AE005FCE3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE191E3E1B6AB4AE005FCE3A /* main.m */; };
 		BE191E421B6AB4AE005FCE3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE191E411B6AB4AE005FCE3A /* AppDelegate.m */; };
-		BE191E451B6AB4AE005FCE3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE191E441B6AB4AE005FCE3A /* ViewController.m */; };
 		BE191E481B6AB4AE005FCE3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE191E461B6AB4AE005FCE3A /* Main.storyboard */; };
 		BE191E4A1B6AB4AE005FCE3A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE191E491B6AB4AE005FCE3A /* Images.xcassets */; };
 		BE191E4D1B6AB4AE005FCE3A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE191E4B1B6AB4AE005FCE3A /* LaunchScreen.xib */; };
 		BE191E591B6AB4AE005FCE3A /* ButtonFunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE191E581B6AB4AE005FCE3A /* ButtonFunTests.m */; };
+		BE191E641B6AB561005FCE3A /* ARCMainCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE191E631B6AB561005FCE3A /* ARCMainCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		BE191E3E1B6AB4AE005FCE3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE191E401B6AB4AE005FCE3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BE191E411B6AB4AE005FCE3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BE191E431B6AB4AE005FCE3A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BE191E441B6AB4AE005FCE3A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BE191E471B6AB4AE005FCE3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE191E491B6AB4AE005FCE3A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BE191E4C1B6AB4AE005FCE3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BE191E521B6AB4AE005FCE3A /* ButtonFunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonFunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE191E571B6AB4AE005FCE3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE191E581B6AB4AE005FCE3A /* ButtonFunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonFunTests.m; sourceTree = "<group>"; };
+		BE191E621B6AB561005FCE3A /* ARCMainCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCMainCollectionViewController.h; sourceTree = "<group>"; };
+		BE191E631B6AB561005FCE3A /* ARCMainCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCMainCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +83,12 @@
 			children = (
 				BE191E401B6AB4AE005FCE3A /* AppDelegate.h */,
 				BE191E411B6AB4AE005FCE3A /* AppDelegate.m */,
-				BE191E431B6AB4AE005FCE3A /* ViewController.h */,
-				BE191E441B6AB4AE005FCE3A /* ViewController.m */,
 				BE191E461B6AB4AE005FCE3A /* Main.storyboard */,
 				BE191E491B6AB4AE005FCE3A /* Images.xcassets */,
 				BE191E4B1B6AB4AE005FCE3A /* LaunchScreen.xib */,
 				BE191E3C1B6AB4AE005FCE3A /* Supporting Files */,
+				BE191E621B6AB561005FCE3A /* ARCMainCollectionViewController.h */,
+				BE191E631B6AB561005FCE3A /* ARCMainCollectionViewController.m */,
 			);
 			path = ButtonFun;
 			sourceTree = "<group>";
@@ -219,9 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE191E451B6AB4AE005FCE3A /* ViewController.m in Sources */,
 				BE191E421B6AB4AE005FCE3A /* AppDelegate.m in Sources */,
 				BE191E3F1B6AB4AE005FCE3A /* main.m in Sources */,
+				BE191E641B6AB561005FCE3A /* ARCMainCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
